@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+  <select name="menu">
+    <optgroup label="coffee">
+      <option value="americano">아메리카노</option>
+      <option value="latte">카페라떼</option>
+      <option value="cappu">카푸치노</option>
+    </optgroup>
+    <optgroup label="non-coffe">
+      <option value="lemon">레몬에이드</option>
+      <option value="hotchoco">핫초코</option>
+      <option value="smooth" selected>스무디</option>
+    </optgroup>
+  </select>
+
+  <br />
+  <br />
+
+  <input type="button" value="클릭해주세요" />
+  <button>click</button>
+  
+  <br />
+  <br />
+
+  <input type="text" placeholder="입력해주세요" />
+
+  <br />
+  <br />
+
+  <input type="password" placeholder="비번입력해주세요" />
+
+  <br />
+  <br />
+
+<!-- 체크박스나 라디오나 모두 name을 통일해야한다는 점이 중요 서로 그걸로 연결됨 -->
+  <input type="checkbox" name="menu" value="coffee" /> 커피
+  <input type="checkbox" name="menu" value="tea" /> 차
+  <input type="checkbox" name="menu" value="smooth" checked /> 스무디
+
+  <br />
+  <br />
+
+  <input type="radio" name="sex" value="man" checked />남자
+  <input type="radio" name="sex" value="woman" />여자
+  <input type="radio" name="sex" value="hom" />혼성
+
+  <br />
+  <br />
+
+  <input type="date" name="datetime" />
+
+  <br />
+  <br />
+
+  <input type="datetime-local" name="local-time" />
+
+  <br />
+  <br />
+
+  <input type="color" />
+
+ </body>
+</html>
