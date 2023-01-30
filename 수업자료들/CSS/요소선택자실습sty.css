@@ -6,6 +6,10 @@
   background-color: orange;
 }
 
-[value] {
+/* [value] {
   background-color: blue; 
+} */
+
+input:not([placeholder]) {
+  background-color: blue;
 }
