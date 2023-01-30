@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습-주문받는 인풋</title>
+ </head>
+ <body>
+  <div id="name">
+    <h1>C아저씨 카페</h1>
+    주문자 이름을 입력 하세요
+    <input type="text" placeholder="한글이름" />
+  </div>
+
+  <br />
+  <hr />
+
+  <div id="many">
+    <h2>단체주문</h2>
+    <input type="checkbox" name="bever" value="coffee" />커피
+    <input type="checkbox" name="bever" value="tea" />차
+    <input type="checkbox" name="bever" value="latte" />라떼
+    <br />
+    <br />
+    주문 날짜 입력
+    <br />
+    <br />
+    <input type="date" name="orderdate" />
+  </div>
+
+  <br />
+  <hr />
+  
+  <div id="indi">
+    <h2>개별주문</h2>
+    <input type="radio" name="b" value="coffee2" />커피
+    <input type="radio" name="b" value="tea2" />차
+    <input type="radio" name="b" value="latte2" />라떼
+    <br />
+    <br />
+    주문 날짜 및 시간 입력
+    <br />
+    <br />
+    <input type="datetime-local" name="orderdatetime" />
+  </div>
+  
+  <br />
+  <hr />
+  
+ </body>
+</html>
