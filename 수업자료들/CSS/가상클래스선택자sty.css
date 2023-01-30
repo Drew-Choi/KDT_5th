@@ -11,3 +11,20 @@ a:active {
 input:focus {
   background-color: orange;
 }
+
+/* .fruits span:first-child {
+  color: red;
+}
+
+.fruits h3:last-child {
+  color: blue;
+} */
+
+/* 홀수선택
+.fruits *:nth-child(2n+1) {
+  color: red;
+} */
+
+.fruits *:not(span) {
+  color: red;
+}
