@@ -1,0 +1,9 @@
+.box::before {
+  content: "앞!";
+}
+
+.box::after {
+  content: "뒤!";
+  background-color: aqua;
+  font-size: 100px;
+}
