@@ -1,0 +1,29 @@
+/* 일치선택자
+
+.orange {
+  color: orange;
+}
+
+span.orange {
+  background-color: skyblue;
+} */
+
+/* 자식선택자
+ul > .orange {
+  color: orange;
+} */
+
+/* 하위(후손)선택자
+div .orange {
+  color: orange;
+} */
+
+/* 인접형제선택자
+.orange + a {
+  color: red;
+} */
+
+/* 일반 형제 선택자 */
+.orange ~ li {
+  color: red;
+}
