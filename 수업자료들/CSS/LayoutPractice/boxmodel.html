@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델(span, div, 인라인, 블록요소 등)></title>
+  <style>
+    /* span {
+      background-color: aqua;
+      font-size: 24px;
+      padding: 20px 20px;
+    } */
+
+    div {
+      background-color: aqua;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      /* 위 아래 2개 div가 겹쳐 있을 때 합으로 20px이 아니라 붙은 부분은 10px로 동일시 해버림 (상쇄)
+      다만, inlin-block은 상쇄하지 않아 10+10 되어 20px가 된다*/
+      padding: 10px;
+    }
+
+    span {
+      display: inline-block;
+      background-color: aqua;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+ </head>
+ <body>
+  <!-- span은 위 아래 마진 안먹음(좌우 마진은 작용함), 패딩은 먹음, 크기 속성(width, height 등)은 안먹음 -->
+  <!-- inline-block은 span에서 위 아래, 크기 등을 조절 할 수 있게 해준다 생각하면 됨 -->
+
+  <!-- <span>span요소입니다.</span>
+  <span>span요소입니다</span> -->
+
+  <!-- <div>Hello</div>
+  <div>World</div> -->
+
+  <span>Inlin-block</span>
+  <span>Inlin-block</span>
+
+ </body>
+</html>

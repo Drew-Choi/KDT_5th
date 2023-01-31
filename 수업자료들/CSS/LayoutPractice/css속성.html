@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css속성들</title>
+  <style>
+    /* 크기 단위
+    px 픽셀
+    % 상대적 백분율(상위 참조 요소가 있어야함)
+    em (부모)요소의 글꼴크기(기본 16px)
+    rem 루트요소(html)의 글꼴 크기(기본 16px)
+    vw 뷰포트 가로 너비의 백분율(가변적)
+    vh 뷰포트 세로 너비의 백분율(가변적)
+    cal(000 - 000) 값을 계산해서 적용
+    */
+
+    /* div {
+      background-color: aqua;
+      width: calc(100vw - 50vw);
+      height: calc(100vh - 50vh);
+    } */
+
+    span {
+      background-color: bisque;
+      line-height: 2em;
+    }
+
+    /* div {
+      width: 300px;
+      height: 300px;
+      background-color:violet;
+      line-height: 300px;
+    } */
+
+    div{
+      background-color: orange;
+      width: 50vw;
+      min-width: 300px;
+    }
+  </style>
+ </head>
+ <body>
+    <div>Max-min</div>
+ </body>
+</html>
