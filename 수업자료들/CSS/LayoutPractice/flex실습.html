@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex실습</title>
+  <style> 
+   ul {
+    display: flex;
+    height: 60px;
+    justify-content:space-around;
+    background-color: rgb(159, 159, 159);
+    list-style: none;
+    padding-left: 0px; 
+    border-radius: 10px;
+    min-width: 400px;
+    align-items: center;
+    }
+
+    li {
+      color: white;
+      font-weight: bold;
+      flex-basis: 100px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+ </head>
+ <body>
+  <ul class="container">
+    <li class="menu1"><a href="#">메뉴1</a></li>
+    <li class="menu2"><a href="#">메뉴2</a></li>
+    <li class="menu3"><a href="#">메뉴3</a></li>
+    <li class="menu4"><a href="#">메뉴4</a></li>
+  </ul>
+    
+ </body>
+</html>

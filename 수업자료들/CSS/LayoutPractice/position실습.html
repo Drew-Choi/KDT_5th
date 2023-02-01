@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position ex</title>
+  <style>
+   body {
+     margin: 0px;
+     font-size: 4rem;
+     } 
+
+   div {
+      position: absolute;
+    }
+
+    .b1 {
+      position: relative;
+      background-color: orange;
+      width: 20rem;
+      height: 20rem;
+    }
+
+    .a1 {
+      width: 10rem;
+      height: 10rem;
+      background-color: aqua;
+      left: 160px;
+      top: 0px;
+    }
+
+    .a2 {
+      width: 10rem;
+      height: 10rem;
+      background-color: tomato;
+      left: 320px;
+    }
+
+    .a3 {
+      width: 10rem;
+      height: 10rem;
+      background-color: blue;
+      left: calc(320px + 160px);
+      top: calc(320px - 160px);
+
+    }
+
+    .a4 {
+      width: 10rem;
+      height: 10rem;
+      background-color: skyblue;
+      right: 160px;
+      bottom: 0px;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="b1">1
+   <div class="a1">2</div>
+   <div class="a4">5</div>
+  </div>
+
+  <div class="a2">3</div>
+  <div class="a3">4</div>
+
+</body>
+</html>

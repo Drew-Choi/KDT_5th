@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <style>
+    .parent {
+      position: relative;
+      background-color: aqua;
+      width: 400px;
+      height: 300px;
+    }
+    .child1 {
+      background-color: yellow;
+      width: 150px;
+      height: 100px;
+      position: relative;
+      left: 50px;
+    }
+    .child2 {
+      position: fixed;
+      right: 30px;
+      top: 30px;
+      width: 200px;
+      height: 150px;
+      background-color: beige;
+    }
+    .child3 {
+      position: relative;
+      width: 150px;
+      height: 300px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+  </div>
+</body>
+</html>
