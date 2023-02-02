@@ -1,0 +1,186 @@
+body {
+  background-image: url('./images/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroes {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  top: 20px;
+  max-width: 700px;
+  padding: 0px 50px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.hero {
+  width: 80px;
+  height: 90px;
+  margin: 4px;
+  border: 3px solid white;
+  transform: skew(-14deg);
+  border-radius: 10px;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.hero:hover {
+  transform: scale(1.3) skew(-14deg);
+  z-index: 1;
+  background-color: orange;
+  border-color: orange;
+  transition: transform 0.1s, background-color 0.5s, border-color 0.5s;
+}
+
+.hero .image {
+  width: 140%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: skew(14deg) translateX(-10px);
+}
+
+
+.heroes .hero:first-child .image {
+  background-image: url('./images/images/hero1.png');
+}
+
+.heroes .hero:nth-child(2) .image {
+  background-image: url('./images/images/hero2.png');
+}
+
+.heroes .hero:nth-child(3) .image {
+  background-image: url('./images/images/hero3.png');
+}
+
+.heroes .hero:nth-child(4) .image {
+  background-image: url('./images/images/hero4.png');
+}
+
+.heroes .hero:nth-child(5) .image {
+  background-image: url('./images/images/hero5.png');
+}
+
+.heroes .hero:nth-child(6) .image {
+  background-image: url('./images/images/hero6.png');
+}
+
+.heroes .hero:nth-child(7) .image {
+  background-image: url('./images/images/hero7.png');
+}
+
+.heroes .hero:nth-child(8) .image {
+  background-image: url('./images/images/hero8.png');
+}
+
+.heroes .hero:nth-child(9) .image {
+  background-image: url('./images/images/hero9.png');
+}
+
+.heroes .hero:nth-child(10) .image {
+  background-image: url('./images/images/hero10.png');
+}
+
+.heroes .hero:nth-child(11) .image {
+  background-image: url('./images/images/hero11.png');
+}
+
+.heroes .hero:nth-child(12) .image {
+  background-image: url('./images/images/hero12.png');
+}
+
+.heroes .hero:nth-child(13) .image {
+  background-image: url('./images/images/hero13.png');
+}
+
+.heroes .hero:nth-child(14) .image {
+  background-image: url('./images/images/hero14.png');
+}
+
+.heroes .hero:nth-child(15) .image {
+  background-image: url('./images/images/hero15.png');
+}
+
+.heroes .hero:nth-child(16) .image {
+  background-image: url('./images/images/hero16.png');
+}
+
+.heroes .hero:nth-child(17) .image {
+  background-image: url('./images/images/hero17.png');
+}
+
+.heroes .hero:nth-child(18) .image {
+  background-image: url('./images/images/hero18.png');
+}
+
+.heroes .hero:nth-child(19) .image {
+  background-image: url('./images/images/hero19.png');
+}
+
+.heroes .hero:nth-child(20) .image {
+  background-image: url('./images/images/hero20.png');
+}
+
+.heroes .hero:nth-child(21) .image {
+  background-image: url('./images/images/hero21.png');
+}
+
+.heroes .hero:nth-child(22) .image {
+  background-image: url('./images/images/hero22.png');
+}
+
+.heroes .hero:nth-child(23) .image {
+  background-image: url('./images/images/hero23.png');
+}
+
+.heroes .hero:nth-child(24) .image {
+  background-image: url('./images/images/hero24.png');
+}
+
+.heroes .hero:nth-child(25) .image {
+  background-image: url('./images/images/hero25.png');
+}
+
+.heroes .hero:nth-child(26) .image {
+  background-image: url('./images/images/hero26.png');
+}
+
+.heroes .hero:nth-child(27) .image {
+  background-image: url('./images/images/hero27.png');
+}
+
+.heroes .hero:nth-child(28) .image {
+  background-image: url('./images/images/hero28.png');
+}
+
+.heroes .hero:nth-child(29) .image {
+  background-image: url('./images/images/hero29.png');
+}
+
+.heroes .hero:nth-child(30) .image {
+  background-image: url('./images/images/hero30.png');
+}
+
+.heroes .hero:nth-child(31) .image {
+  background-image: url('./images/images/hero31.png');
+}
+
+.heroes .hero:nth-child(32) .image {
+  background-image: url('./images/images/hero32.png');
+}
+
+.contain {
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
