@@ -7,7 +7,7 @@
 // num = 10 +5;
 // console.log(num);
 
-const num2 = 10;
+let num2 = 10;
 console.log(num2);
 
 num2 = 10 + 5;
