@@ -60,7 +60,7 @@ class Circle extends Shape {
     this.radius = radius;
   }
   getArea (){
-    return (this.radius ** 2) * 3.14
+    return this.radius ** 2 * 3.14
   }
 }
 
