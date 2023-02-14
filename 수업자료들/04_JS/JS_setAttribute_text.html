@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>setAttribute</title>
+ </head>
+ <body>
+  <!-- <div class="box">box</div>
+  <input type="text" />
+
+  <div class="div1"></div>
+  <div class="div2"></div> -->
+
+  <!-- 실습 -->
+  <div class="box1">1</div>
+  <div class="box2">2</div>
+  <input type="text" />
+ </body>
+
+
+
+ <script>
+  // 어트리뷰트와 텍스트 사용법
+  // const boxEl = document.querySelector(".box");
+  // const inputEl = document.querySelector("input");
+
+  // boxEl.setAttribute("style", "background-color: orange; height: 300px");
+  // inputEl.setAttribute("placeholder", "통합검색");
+
+  // boxEl.textContent = "KDT"
+  
+  // const div1El = document.querySelector(".div1");
+  // const div2El = document.querySelector(".div2");
+
+  // div1El.innerHTML = "<button>Test</button>"
+  // div2El.innerText = "<button>Test</button>"
+
+  let box1El = document.querySelector(".box1");
+  let box2El = document.querySelector(".box2");
+  let inputEl = document.querySelector("input");
+
+  box1El.innerHTML = "<a href='http://naver.com' target='_blank'> 네이버로 이동 <a>"
+  box2El.textContent = "박스 내용 및 스타일 변경"
+  box2El.style = "background-color: orange"
+  inputEl.setAttribute("placeholder", "아이디를 입력하세요")
+
+ </script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .o {
+      background-color: orange;
+    }
+
+    .s {
+      background-color: skyblue;
+    }
+
+  </style>
+ </head>
+ <body>
+  <div class="box1" onclick="ch1()">클릭</div>
+  <div class="box2">클릭</div>
+ </body>
+ <script>
+  let box1El = document.querySelector(".box1");
+  let box2El = document.querySelector(".box2");
+
+  function ch1 () {
+    if (box1El.classList.contains("o")) {
+      box1El.classList.remove("o");
+      box1El.classList.add("s");
+    } else if (box1El.classList.contains("s")) {
+      box1El.classList.remove("s");
+      box1El.classList.add("o");
+    } else {
+      box1El.classList.add("o");
+    }
+  }
+
+  box2El.addEventListener("click", function() {
+    if (box2El.classList.contains("o")) {
+      box2El.classList.remove("o");
+      box2El.classList.add("s");
+    } else if (box2El.classList.contains("s")) {
+      box2El.classList.remove("s");
+      box2El.classList.add("o");
+    } else {
+      box2El.classList.add("o");
+    }
+  })
+
+ </script>
+</html>

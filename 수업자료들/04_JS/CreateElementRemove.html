@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li class="list">4</li>
+  </ul>
+ </body>
+ <script>
+  //지우기
+    const listel = document.querySelector(".list");
+    listel.remove();
+
+
+  //appand
+  const box = document.createElement("div");
+  const li = document.createElement("li");
+  const ulEl = document.querySelector("ul");
+
+  ulEl.appendChild(li);
+  li.textContent = "test";
+
+  const checkbox = document.createElement("input");
+  checkbox.setAttribute("type", "checkbox");
+  li.appendChild(checkbox);
+ 
+
+  //prepand
+  const firstli = document.createElement("li");
+  const inputEl = document.createElement("input");
+  inputEl.setAttribute("type", "passward");s
+
+  ulEl.prepend(inputEl);
+
+  console.log(inputEl.parentNode());
+
+  
+
+
+
+ </script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnClickAddEvent</title>
+ </head>
+ <body>
+  <div class="box1" onclick="test()" style="cursor: pointer;">1</div>
+  <div class="box2" onclick="changeColor()" style="cursor: pointer;">2</div>
+ </body>
+ <script>
+  function test () {
+    alert("클릭!");
+  }
+
+  function changeColor () {
+    const box2 = document.querySelector(".box2");
+    box2.setAttribute("style", "background-color: orange");
+  }
+ </script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  
+  <div class="add" style="cursor: pointer;">3</div>
+  <input type="text" />
+
+ </body>
+ <script>
+  const addEv = document.querySelector(".add");
+
+  addEv.addEventListener ("click", function() {
+   alert("이벤트 리스너 발동!");
+  });
+
+  const addIN = document.querySelector("input");
+
+  addIN.addEventListener("focus", function() {
+    addIN.style = "background-color: orange";
+  })
+
+  // • Click : 클릭
+  // • Mouse 계열
+  //    • Mouseover : 요소에 커서를 올렸을 때
+  //    • Mouseout : 마우스가 요소를 벗어날 때
+  //    • Mousedown : 마우스 버튼을 누르고 있는 상태 • Mouseup : 마우스 버튼을 떼는 순간
+  // • Focus : 포커스가 갔을 때
+  // • Blur : 포커스가 벗어나는 순간
+
+  // • Key 계열
+  //    • Keypress:키를누르는순간+누르고있는동안계속발생
+  //    • Keydown:키를누르는순간에만발생
+  //    • Keyup:키를눌렀다가떼는순간
+  // • Load : 웹페이지에 필요한 모든 파일(html, css, js 등)의 다운로드가 완료 되 었을 때
+  // • Resize : 브라우저 창의 크기가 변경 될 때
+  // • Scroll : 스크롤이 발생할 때
+  // • Unload : 링크를 타고 이동하거나, 브라우저를 닫을 때
+  // • Change:폼필드의상태가변경되었을때
+
+ </script>
+</html>
