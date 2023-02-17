@@ -2,14 +2,13 @@
 
 const fruits = ["Apple", "Banana", "Cherry"];
 const findResult = fruits.find((item) => item === 'Apple');
-
 console.log(findResult);
 
 const findIndex = fruits.findIndex((item) => item === "Banana");
 console.log(findIndex);
 
-const findResult2 = fruits.find((item) => {
-  /^A/.test(item)
-});
+// const findResult2 = fruits.find((item) => {
+//   /^A/.test(item)
+// });
 
-console.log(findResult2);
+// console.log(findResult2);
