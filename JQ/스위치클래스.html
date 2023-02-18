@@ -1,0 +1,68 @@
+<html>
+ <head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="/JQ/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.css">
+  <script src="/JQ/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+  <script src="/JQ/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+  <script>
+   	
+    function bigger(){
+        $(".first").addClass("sizeup");
+      }
+ 
+    function white(){
+        $(".second").removeClass("second");
+      }
+ 
+    function pink(){
+        $(".third").switchClass("sizeup","pink", 1000);
+      }
+ 
+    function getfirst(){
+        if($("div").hasClass("first")) {
+          $(".first").remove();
+        }        
+      }
+ 
+  </script>
+  <style>
+ 
+      div {
+        width : 100px;
+        height : 100px;
+      }
+ 
+      .first {
+        background-color : red;
+      }
+ 
+      .second {
+        background-color : yellow;
+      }
+ 
+      .third {
+        background-color : blue;
+      }
+ 
+      .pink {
+        background-color: pink;
+      }
+ 
+      .sizeup {
+        font-size:30px;
+      }
+ 
+  </style>
+ </head>
+ 
+ 	
+ <body>
+    <button type="button" onclick="bigger();">커져라</button>
+    <button type="button" onclick="white();">하얘져라</button>
+    <button type="button" onclick="pink();">분홍분홍해져라</button>
+    <button type="button" onclick="getfirst();">첫번째div만 없어져라 </button>
+    <div class="first">가나다</div>
+    <div class="second">라마바</div>
+    <div class="third sizeup">사아자</div>
+  </body>
+</html>
