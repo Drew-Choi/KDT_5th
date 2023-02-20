@@ -1,0 +1,85 @@
+@import "reset";
+@import "mixin";
+
+$body-bg: #fff;
+$wrap-border: #ddd;
+$wrap__item-bg: #fff;
+$wrap__item_h2: #333;
+$wrap__item_p: #777;
+$btn-bg: orange;
+$btn-font: white;
+$wrap__item-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+body {
+  background-color: $body-bg;
+
+  .wrap {
+  width: 100%;
+  border: 2px solid $wrap-border;
+  padding: 100px 0px;
+  display: flex;
+  justify-content: center;
+  perspective: 600px;
+  
+  &:hover {
+    .item{
+      transform: translateY(0px)rotateY(0deg);
+      opacity:1;
+    }
+  }
+
+    .item {
+
+    $interval: 0.3s;
+    // @for $i from 1 to 5 {
+    //   &:nth-child(#{$i}) {
+    //     transition-delay: $interval * $i;
+    //   }
+    // }
+    width: 300px;
+    padding: 30px;
+    background-color: $wrap__item-bg;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: $wrap__item-shadow;
+    transform: translateY(100px) rotateY(180deg);
+    transition: 0.6s;
+    opacity: 0;
+
+      h2 {
+      font: bold 30px/1 "arial";
+      margin-bottom: 20px;
+      @if $wrap__item-bg == #fff {
+        color: $wrap__item_h2;
+      }
+      @else {
+        color: white;
+      }
+      }
+
+      p {
+      font: normal 16px/1.5 "arial"; 
+      @if $wrap__item-bg == #fff {
+        color: $wrap__item_p;
+      }
+      @else {
+      color: white; }
+      }
+
+      $bgColors: (orange, hotpink, aqua, lightgreen);
+      
+      @each $el in $bgColors {
+        $index: index($bgColors, $el);
+        &:nth-child(#{$index}) {
+          transition-delay: $interval * $index;
+          a {
+            @include button($width: 100%, $bg-color: $el, $font-color: $btn-font);
+          }
+        }
+      }
+     
+    }
+  }
+  
+
+}
