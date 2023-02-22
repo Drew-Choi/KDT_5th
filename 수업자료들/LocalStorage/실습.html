@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.localStorage.setItem("a", "최두루");
+    window.localStorage.setItem("b", "김두루");
+    window.localStorage.setItem("c", "이두루");
+    window.localStorage.setItem("d", "변두루");
+    window.localStorage.setItem("e", "임두루");
+    
+    const localLeng = window.localStorage.length;
+    for(let i = 0; i < localLeng; i += 1) {
+      let key = window.localStorage.key(i);
+      console.log(key);
+      console.log(window.localStorage.getItem(key));
+    }
+
+  </script>
+ </head>
+ <body>
+
+
+  
+ </body>
+</html>

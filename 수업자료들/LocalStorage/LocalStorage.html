@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //단일 자료 저장시
+    window.localStorage.setItem("name", "최두루");
+    console.log(window.localStorage.getItem("name"));
+
+    window.localStorage.setItem("number", 1);
+    const typeIs = window.localStorage.getItem("number");
+
+    console.log(window.localStorage.getItem("number"));
+    console.log(typeof(typeIs));
+    //로컬스토리지는 데이터를 모두 스트링으로 저장
+
+    //로컬스토리지는 문자열(스트링)만 받기 때문에 객체형태는 어려울 수 있다.
+    //그래서 로컬스토리지로 객체를 저장하려면 JSON형태로 stringify메서드를 써서 스트링으로 변환해줘야함.
+
+    const tetz = {
+      name: "이효석",
+      isOld: 39,
+      hobby: ["음주", "콜라", "플스", "자전거"]
+    }
+
+    const jsonItem = JSON.stringify(tetz);
+
+    const obj = JSON.parse(jsonItem);
+   
+
+    console.log(jsonItem);
+    console.log(tetz);
+    console.log(obj.name);
+
+    const jsonTetz = JSON.stringify(tetz);
+    window.localStorage.setItem('a', jsonTetz);
+    console.log(window.localStorage);
+
+    const jsonTetzFrom = window.localStorage.getItem('tetz');
+    const objT = JSON.parse(jsonTetzFrom);
+    console.log(objT);
+
+    //뽀로로 테스트
+    window.localStorage.setItem("pororo", "뽀로로입니다.");
+    console.log(window.localStorage.getItem("pororo"));
+    window.localStorage.removeItem("pororo");
+    console.log(window.localStorage.getItem("pororo"));
+    
+    //모두 지우기
+    window.localStorage.clear();
+    console.log(window.localStorage);
+
+    //모두 지웠으니 다시 만들자
+    //그리고 로컬스토리지 자료 갯수(length)와 자료위치(key(0~등등))로 특정키 찾아보기 해보자
+    window.localStorage.setItem('a', '최두루');
+    window.localStorage.setItem('b', '뽀로로');
+    console.log(window.localStorage.length);
+    console.log(window.localStorage.key(0));
+    console.log(window.localStorage.key(1));
+    console.log(window.localStorage.key(2));
+
+    window.localStorage.clear();
+
+
+    //로컬스토리지와 세션스토리지 차이
+    window.localStorage.setItem("a", "최두루");
+    window.sessionStorage.setItem("b", "뽀로로");
+        
+
+
+
+
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>
